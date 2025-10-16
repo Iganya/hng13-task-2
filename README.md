@@ -21,6 +21,7 @@ A simple FastAPI project that returns your profile info and a random cat fact dy
   "timestamp": "2025-10-16T13:31:23.784Z",
   "fact": "A cat usually has about 12 whiskers on each side of its face."
 }
+```
 
 ## Technology Stack
 - Programming Language: Python
