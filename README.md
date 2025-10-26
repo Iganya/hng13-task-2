@@ -1,39 +1,31 @@
-# 🧙 HNG 13 — Stage 0 Task
+# 🧙 HNG 13 — Stage 3 Task
 
-A simple FastAPI project that returns your profile info and a random cat fact dynamically fetched from the Cat Facts API.
+## Country Currency & Exchange API
 
+A RESTful API built with FastAPI for fetching, storing, and managing country data with currency and exchange rates.
 ---
 
-## 🚀 Endpoint
+## 🚀 Endpoints
 
-**GET** `/me`
+- POST /countries/refresh: Refresh data from external APIs.
+- GET /countries: List countries (filters: ?region=Africa, ?currency=NGN, ?sort=gdp_desc).
+- GET /countries/{name}: Get single country.
+- DELETE /countries/{name}: Delete country.
+- GET /status: Get status.
+- GET /countries/image: Get summary image.
 
-### Example Response
-
-```json
-{
-  "status": "success",
-  "user": {
-    "email": "matthewiganga@gmail.com",
-    "name": "Matthew Gift Iganya",
-    "stack": "Python/FastAPI"
-  },
-  "timestamp": "2025-10-16T13:31:23.784Z",
-  "fact": "A cat usually has about 12 whiskers on each side of its face."
-}
-```
 
 ## Technology Stack
 - Programming Language: Python
 - Framework: FastAPI
-- Deployment: Hosted on vercel
-- CORS Handling: Configured to allow all origins
+- Deployment: Hosted Railway
+- Database: Mysql
 
 
 ## How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone hhttps://github.com/iganya/hng13-task-0.git
+   git clone hhttps://github.com/iganya/hng13-task-2.git
    cd your-repo
    ```
 2. Create a virtual environment and activate it:
