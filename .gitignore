@@ -1,8 +1,10 @@
+# Env file
+.env
+
 # Virtual Evironments
 venv/
 
 # Python cache
 __pycache__/
 
-# Evironment variables
-.env
+
