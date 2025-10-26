@@ -11,10 +11,10 @@ MYSQL_HOST = os.getenv("MYSQL_HOST")
 MYSQL_PORT = os.getenv("MYSQL_PORT")
 MYSQL_DB = os.getenv("MYSQL_DB")
 
-DB_URL = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}"
-print("\n\n startline")
-print("Database URL:", DB_URL)
-print("\n\n Endline")
+# DB_URL = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}"
+DB_URL = f"mysql+pymysql://user:QiPHEWAwmLoTxdCcUNVXVxonSNbeKsBu@mysql.railway.internal:3306/railway"
+
+
 
 
 engine = create_engine(DB_URL)
