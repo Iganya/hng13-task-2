@@ -19,7 +19,8 @@ load_dotenv()
 DB_URL = os.getenv('DATABASE_URL')
 print(DB_URL)
 if not DB_URL:
-    raise ValueError("DATABASE_URL is not set, check your envorment variables")
+    DB_URL = "mysql+pymysql://root:QiPHEWAwmLoTxdCcUNVXVxonSNbeKsBu@yamanote.proxy.rlwy.net:38872/railway"
+
 
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
